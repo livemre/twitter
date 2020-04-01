@@ -1,0 +1,47 @@
+.azure{
+    background-color: darkgray;
+}
+
+.padding10{
+    padding: 10px;
+    
+}
+
+body{
+background-color:lightblue;
+}
+
+.fl-rt{
+    float: right;
+}
+
+.bg-wht{
+    background-color: white;
+}
+
+.username{
+    position: relative;
+    display: flex;
+}
+
+.username2{
+    
+    
+    
+    
+}
+
+.tweetle{
+    position: relative;
+    display: flexbox;
+}
+
+.icon-set{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}

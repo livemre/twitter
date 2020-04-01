@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awsome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Special CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Twitter - DashBoard</title>
+</head>
+
+<body class="bg-wht">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Button trigger modal -->
+                <button type="button" id="btneditProfile" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Edit Profile
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="modalName">Name</label>
+                                    <input type="text" class="form-control" id="modalName" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modalLastName">Last Name</label>
+                                    <input type="text" class="form-control" id="modalLastName" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modalUsername">Username</label>
+                                    <input type="text" class="form-control" id="modalUsername" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modalPassword">Password</label>
+                                    <input type="text" class="form-control" id="modalPassword" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modalMail">Mail Address</label>
+                                    <input type="text" class="form-control" id="modalMail" value="">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button id="modalSave" type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="username">
+                            <div class="mr-3"><img class="rounded-circle" src="avatar.jpg" width="60" height="60"></div>
+                            <div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                    </div>
+                                    <textarea id="tweetText" class="form-control" aria-label="With textarea"
+                                        placeholder="Neler oluyor?"></textarea>
+                                </div>
+                                <div>
+                                    <button id="tweetButton" class="btn btn-primary mt-3 fl-rt">Tweetle</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                      <div class="card-body">
+                          <button id ="allTweets" class="btn btn-primary">All Tweets</button>
+                          <button id ="myTweets" class="btn btn-success">My Tweets</button>
+                          <button id ="myFavorites" class="btn btn-success">My Favorites</button>
+                          <button id ="myRetweets" class="btn btn-success">My Retweets</button>
+                      </div>
+                  </div>
+                </div>
+                <div id="mainCard">
+                    
+
+                </div>
+
+                <div id="streamMyTweets">
+                    <p>My Tweets</p>
+
+                </div>
+
+                <div id="streamMyFavorites">
+                    <p>My Favorites</p>
+
+                </div>
+
+                <div id="streamMyRetweet">
+                    <p>My ReTweets</p>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                Test
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Special Script-->
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
