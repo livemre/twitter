@@ -28,6 +28,29 @@ const streamMyTweets = document.getElementById('streamMyTweets');
 const streamMyFavorites = document.getElementById('streamMyFavorites');
 const streamMyRetweet = document.getElementById('streamMyRetweet');
 
+const tweetButton = document.getElementById("tweetButton");
+const tweetText = document.getElementById("tweetText");
+const btneditProfile = document.getElementById('btneditProfile');
+
+tweetButton.addEventListener("click", tweetle);
+btneditProfile.addEventListener('click', updateProfile);
+
+//Iconlar İçin
+let favClicked = false;
+
+getTweetsFromDB();
+
+
+
+function createTweet(){
+    
+}
+
+
+
+
+
+
 // Butonlar ile tweetleri filtreleme
 
 allTweets.addEventListener('click',()=>{
@@ -174,19 +197,7 @@ myRetweets.addEventListener('click', ()=>{
     console.log("My Retweets");
     
 })
-//Iconlar İçin
-let favClicked = false;
 
-
-
-const tweetButton = document.getElementById("tweetButton");
-const tweetText = document.getElementById("tweetText");
-const btneditProfile = document.getElementById('btneditProfile');
-
-tweetButton.addEventListener("click", tweetle);
-btneditProfile.addEventListener('click', updateProfile);
-
-getTweetsFromDB();
 
 function getTweetsFromDB(){
     if(tweetDB != null){
